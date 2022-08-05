@@ -1,6 +1,7 @@
 """
 Leetcode: https://leetcode.com/problems/word-search/
 Date: 5-Aug-2022
+Author: Ankur Jat
 """
 class Solution(object):
     def exist(self, board, word):
