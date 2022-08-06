@@ -1,3 +1,8 @@
+"""
+Leetcode: https://leetcode.com/problems/number-of-islands/
+Date: 6-Aug-2022
+Author: Ankur Jat (https://www.linkedin.com/in/ankur-jat-41355674/)
+"""
 class Solution(object):
     def numIslands(self, grid):
         """

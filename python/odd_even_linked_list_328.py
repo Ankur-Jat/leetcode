@@ -1,7 +1,7 @@
 """
 Leetcode: https://leetcode.com/problems/odd-even-linked-list/
 Date: 5-Aug-2022
-Author: Ankur Jat
+Author: Ankur Jat (https://www.linkedin.com/in/ankur-jat-41355674/)
 """
 class ListNode(object):
     def __init__(self, val=0, next=None):
