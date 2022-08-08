@@ -1,4 +1,3 @@
-
 """
 Leetcode: https://leetcode.com/problems/reachable-nodes-with-restrictions/
 Date: 8-Aug-2022
