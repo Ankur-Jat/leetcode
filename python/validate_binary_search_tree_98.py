@@ -1,4 +1,3 @@
-
 """
 Leetcode: https://leetcode.com/problems/validate-binary-search-tree/
 Date: 11-Aug-2022
