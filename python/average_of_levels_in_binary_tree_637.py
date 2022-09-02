@@ -1,4 +1,3 @@
-
 """
 Leetcode: https://leetcode.com/problems/average-of-levels-in-binary-tree/
 Date: 2-Sep-2022
