@@ -24,7 +24,7 @@ class Solution(object):
             iter_array = list(new_num_array)
 
             for num in iter_array:
-                abs_next = abs(num + k)
+                abs_next = num + k
                 if abs_next >= 0 and abs_next <= 9:
                     for temp_num in pre_result[num]:
                         result.append(int(str(temp_num) + str(abs_next)))
