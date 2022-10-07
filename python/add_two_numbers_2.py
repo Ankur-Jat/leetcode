@@ -11,7 +11,7 @@ class ListNode(object):
 class Solution(object):
     def sum_two_nodes(self, val1, val2, carry):
         sum_val = val1 + val2 + carry
-        carry = sum_val / 10
+        carry = sum_val // 10
         sum_val %= 10
         node = ListNode(sum_val)
         return node, carry
