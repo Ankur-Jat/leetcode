@@ -37,7 +37,7 @@ class Solution {
 
 }
 
-class ThreeSumClosest {
+class ThreeSumClosest16 {
     public static void main(String[] args) throws Exception {
         Solution solution = new Solution();
         int[] nums = { 1, 4, 5, 8, 2, 3 };
