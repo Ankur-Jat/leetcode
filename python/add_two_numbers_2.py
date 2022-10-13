@@ -3,10 +3,13 @@ Leetcode: https://leetcode.com/problems/add-two-numbers/
 Date: 5-Aug-2022
 Author: Ankur Jat (https://www.linkedin.com/in/ankur-jat-41355674/)
 """
+
+
 class ListNode(object):
     def __init__(self, val=0, next=None):
         self.val = val
         self.next = next
+
 
 class Solution(object):
     def sum_two_nodes(self, val1, val2, carry):
@@ -15,7 +18,7 @@ class Solution(object):
         sum_val %= 10
         node = ListNode(sum_val)
         return node, carry
-    
+
     def addTwoNumbers(self, l1, l2):
         """
         :type l1: ListNode
@@ -27,7 +30,8 @@ class Solution(object):
         result_head = sum_ll = None
         carry = 0
         while ptr1 or ptr2:
-            node, carry = self.sum_two_nodes(ptr1.val if ptr1 else 0, ptr2.val if ptr2 else 0, carry)
+            node, carry = self.sum_two_nodes(
+                ptr1.val if ptr1 else 0, ptr2.val if ptr2 else 0, carry)
             if result_head:
                 sum_ll.next = node
                 sum_ll = node
@@ -38,7 +42,8 @@ class Solution(object):
         if carry:
             sum_ll.next, _ = self.sum_two_nodes(carry, 0, 0)
         return result_head
-            
+
+
 def test():
     l1 = ListNode(2)
     l1.next = ListNode(4)
@@ -53,6 +58,7 @@ def test():
             print("Test case failed at index: ", i)
             break
         l3 = l3.next
+
 
 if __name__ == "__main__":
     test()
