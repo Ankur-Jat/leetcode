@@ -3,6 +3,8 @@ Leetcode: https://leetcode.com/problems/check-distances-between-same-letters/
 Date: 3-Sep-2022
 Author: Ankur Jat (https://www.linkedin.com/in/ankur-jat-41355674/)
 """
+
+
 class Solution(object):
     def checkDistances(self, s, distance):
         """
@@ -26,11 +28,14 @@ class Solution(object):
 def test():
     solution = Solution()
     test_cases = [
-        [ "abaccb", [1,3,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], True ],
-        [ "aa", [1,3,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], False]
+        ["abaccb", [1, 3, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], True],
+        ["aa", [1, 3, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], False]
     ]
     for index, test_case in enumerate(test_cases):
-        assert solution.checkDistances(test_case[0], test_case[1]) == test_case[2], 'test case number {} is failing'.format(index)
+        assert solution.checkDistances(
+            test_case[0], test_case[1]) == test_case[2], 'test case number {} is failing'.format(index)
 
 
 if __name__ == '__main__':
