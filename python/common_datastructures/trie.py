@@ -31,6 +31,22 @@ class Trie:
     def is_prefix(self, prefix):
         node = self.__get_prefix_node__(prefix)
         return True if node else False
+    
+    def get_suggestions(self, prefix):
+        node = self.__get_prefix_node__(prefix)
+        if not node:
+            return []
+        stack = [(node, prefix)]
+        result = []
+        while stack:
+            node, word = stack.pop()
+            if node.is_word:
+                result.append(word)
+            for key in node.children.keys():
+                stack.append((node.children[key], word+key))
+        return result
+
+
 
 
 def test():
@@ -42,6 +58,11 @@ def test():
         'Jai-Hanuma') == False, '"Jai-Hanuma" should not be in the trie'
     assert trie.is_prefix(
         'Jai-Hanuma') == True, '"Jai-Hanuma" should be in the trie as prefix'
+    trie.insert('Jai-Mata-Di')
+    assert trie.is_prefix('Jai-') == True, '"Jai-" should be a prefix'
+    assert trie.search('Jai-Mata-Di') == True, '"Jai-Mata-Di" should be present in trie'
+    assert trie.get_suggestions("Jai") == [
+        "Jai-Mata-Di", "Jai-Hanuman"], '"Jai" prefix should match with "Jai-Hanuman" and "Jai-Mata-Di" in trie'
 
 
 if __name__ == "__main__":
