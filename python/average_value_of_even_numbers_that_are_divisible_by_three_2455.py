@@ -1,6 +1,6 @@
 """
 Leetcode: https://leetcode.com/problems/average-value-of-even-numbers-that-are-divisible-by-three/
-Date: 28-oct-2022
+Date: 30-oct-2022
 Author: Ankur Jat (https://www.linkedin.com/in/ankur-jat-41355674/)
 """
 
