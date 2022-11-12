@@ -3,6 +3,8 @@ Leetcode: https://leetcode.com/problems/palindrome-number/
 Date: 9-Aug-2022
 Author: Ankur Jat (https://www.linkedin.com/in/ankur-jat-41355674/)
 """
+
+
 class Solution(object):
     def isPalindrome(self, x):
         """
@@ -37,7 +39,8 @@ def test():
     ]
     solution = Solution()
     for index, testcase in enumerate(testcases):
-        assert solution.isPalindrome(testcase[0]) == testcase[1], "Testcase {} is failing".format(index)
+        assert solution.isPalindrome(
+            testcase[0]) == testcase[1], "Testcase {} is failing".format(index)
 
 
 if __name__ == "__main__":
