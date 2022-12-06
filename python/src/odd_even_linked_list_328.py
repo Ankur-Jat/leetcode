@@ -3,10 +3,13 @@ Leetcode: https://leetcode.com/problems/odd-even-linked-list/
 Date: 5-Aug-2022
 Author: Ankur Jat (https://www.linkedin.com/in/ankur-jat-41355674/)
 """
+
+
 class ListNode(object):
     def __init__(self, val=0, next=None):
         self.val = val
         self.next = next
+
 
 class Solution(object):
     def oddEvenList(self, head):
@@ -26,6 +29,7 @@ class Solution(object):
             even = even.next
         odd.next = even_backup
         return head
+
 
 def test():
     l1 = ListNode(2)
@@ -50,6 +54,7 @@ def test():
             print("Second Test case failed at index: ", i)
             break
         l2 = l2.next
+
 
 if __name__ == "__main__":
     test()
