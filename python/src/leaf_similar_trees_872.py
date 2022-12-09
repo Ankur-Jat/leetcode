@@ -1,6 +1,6 @@
 """
 Leetcode: https://leetcode.com/problems/leaf-similar-trees
-Date: 8-Aug-2022
+Date: 8-Dec-2022
 Author: Ankur Jat (https://www.linkedin.com/in/ankur-jat-41355674/)
 """
 

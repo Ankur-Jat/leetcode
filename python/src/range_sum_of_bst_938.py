@@ -1,6 +1,6 @@
 """
 Leetcode: https://leetcode.com/problems/range-sum-of-bst/
-Date: 7-Aug-2022
+Date: 7-Dec-2022
 Author: Ankur Jat (https://www.linkedin.com/in/ankur-jat-41355674/)
 """
 
