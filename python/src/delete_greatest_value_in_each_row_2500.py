@@ -29,3 +29,6 @@ def test():
         result = solution.deleteGreatestValue(testcase[0])
         assert result == testcase[1], "Testcase #{} failed! Expected: {}, Got: {}".format(
             index, testcase[1], result)
+
+if __name__ == "__main__":
+    test()
